@@ -21,7 +21,7 @@ const server = http.createServer(app)
 
 const router = require("./src/routes");
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors())
